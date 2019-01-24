@@ -1,0 +1,19 @@
+<view>
+
+  <view class='ul-duihuan'>
+    <view class='li-duihuan flex'  wx:for="{{datalist}}">
+      <view class='flex'>
+        <view class='dh-img'>
+          <image src='{{item.imgUrl}}' mode='scaleToFill' />
+        </view>
+        <view class='dh-con'>
+          <view>{{item.goodsName}}</view>
+          <text>{{item.createTime}}</text>
+        </view>
+      </view>
+
+      <view class='r-jf'>-{{item.goodsScore}}</view>
+
+    </view>
+  </view>
+</view>

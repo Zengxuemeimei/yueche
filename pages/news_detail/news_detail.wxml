@@ -1,0 +1,20 @@
+<!--pages/helpcenter_d/helpcenter_d.wxml-->
+ <view class='h-d-t'>
+  <view>{{news.title}}</view>
+ </view>
+<view class='hd-con'>
+<view>
+ 
+<image style='width: 100%;' src='{{news.imgUrl}}' mode='aspectFit' />
+</view>
+<view class='hd-con-p1'> 
+{{news.questionContent}}
+</view>
+
+ 
+</view>
+
+
+ 
+
+ 

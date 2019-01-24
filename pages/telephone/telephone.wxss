@@ -1,0 +1,35 @@
+/* pages/telephone/telephone.wxss */
+
+.pdb-image{
+  width: 114rpx;
+  height: 114rpx;
+  margin-right: 30rpx;
+}
+.pdb-image image{
+  width: 114rpx;
+  height: 114rpx;
+}
+.phone-dd-t{
+  padding: 20rpx 30rpx;
+border-bottom: 1rpx solid #f2f2f2;
+font-size: 32rpx;
+color: #353535;
+background: #f2f2f2;
+
+}
+.phone-dd-b{
+ padding: 10rpx 30rpx 10rpx 20rpx;
+ border-bottom: 1rpx solid #f2f2f2;
+
+}
+.pdb-right image{
+  width: 14rpx;
+}
+.pdb-con view{
+  font-size: 30rpx;
+  color: #333;
+}
+.pdb-con text{
+font-size: 26rpx;
+color: #808080;
+}

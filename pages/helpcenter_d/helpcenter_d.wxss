@@ -1,0 +1,27 @@
+/* pages/helpcenter_d/helpcenter_d.wxss */
+.h-d-t{
+  padding: 0 0 0 30rpx;
+
+}
+.h-d-t view{
+  padding: 30rpx 30rpx 30rpx 0;
+  font-size: 30rpx;
+  color: #333;
+  border-bottom: 1rpx solid #ddd;
+}
+.hd-con{
+  padding: 20rpx 30rpx;
+}
+.hd-con-p1{
+  font-size: 26rpx;
+  color: #888;
+  line-height: 45rpx;
+  text-indent: 2em;
+  margin-bottom: 20rpx;
+}
+.hd-con-p2{
+ font-size: 26rpx;
+  color: #888;
+  line-height: 45rpx;
+  
+}

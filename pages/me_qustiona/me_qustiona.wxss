@@ -1,0 +1,105 @@
+/* pages/me_qustiona/me_qustiona.wxss */
+
+.qa-head {
+  padding: 20rpx 30rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.qa-title {
+  color: #333;
+  font-size: 38rpx;
+  line-height: 60rpx;
+}
+
+.qa-head-b {
+  margin-top: 30rpx;
+}
+
+.qah-b-left {
+}
+
+.qah-b-left image {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.qah-b-left view {
+  font-size: 28rpx;
+  color: #333;
+  vertical-align: middle;
+  margin: 0 50rpx 0 30rpx;
+  width: 200rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.qah-b-left text {
+  font-size: 24rpx;
+  color: #888;
+  vertical-align: middle;
+}
+
+.qah-b-right image {
+  width: 26rpx;
+  height: 22rpx;
+  vertical-align: middle;
+  margin-right: 16rpx;
+  line-height: 1;
+}
+
+.qah-b-right text {
+  font-size: 24rpx;
+  color: #888;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.qa-yhhd {
+  font-size: 32rpx;
+  color: #5fc4fe;
+  padding: 20rpx 30rpx 0;
+}
+
+.qa-ulist {
+  padding: 20rpx 0 20rpx 30rpx;
+}
+
+.qa-ulist .qa-title {
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+
+  .qa-list {
+  border-bottom: 1rpx solid #ddd;
+  padding: 30rpx 20rpx 30rpx 20rpx;
+}
+
+.qa-ulist .qa-head-b {
+  margin-top: 10rpx;
+}
+
+.qabr-delete image {
+  width: 30rpx;
+  height: 32rpx;
+}
+
+.qabr-delete text {
+  color: #f96464 !important;
+  font-size: 24rpx;
+}
+
+.qa-content {
+  font-size: 26rpx;
+  color: #888;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 15rpx 0 30rpx;
+}
+
+.qa-ulist .qa-title.qa-title-2 {
+  font-size: 32rpx;
+}

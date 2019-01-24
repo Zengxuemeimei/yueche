@@ -1,0 +1,34 @@
+
+<view class='cell-ul'>
+ 
+
+  <navigator url="../helpcenter_d/helpcenter_d?id=1"  class='cell-li flex'>
+    <view class='cell-li-l'>
+      
+      <text>怎么获得积分？</text>
+    </view>
+    <view class='cell-li-r'>
+      <image src='../../static/images/rr_rr.png'  mode='aspectFit' />
+    </view>
+  </navigator>
+
+  <navigator url="../helpcenter_d/helpcenter_d?id=2" class='cell-li flex'>
+    <view class='cell-li-l'>
+      
+      <text>怎么退出登录？</text>
+    </view>
+    <view class='cell-li-r'>
+      <image src='../../static/images/rr_rr.png'  mode='aspectFit' />
+    </view>
+  </navigator>
+
+  <navigator url="../helpcenter_d/helpcenter_d?id=3" class='cell-li flex'>
+    <view class='cell-li-l'>
+      
+      <text>能同时预约多少服务？</text>
+    </view>
+    <view class='cell-li-r'>
+      <image src='../../static/images/rr_rr.png'  mode='aspectFit' />
+    </view>
+  </navigator>
+</view>

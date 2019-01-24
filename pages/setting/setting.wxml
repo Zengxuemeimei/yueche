@@ -1,0 +1,50 @@
+<!--pages/setting/setting.wxml-->
+
+<view class='setting-cell-ul'>
+
+  <navigator class='cell-li flex' url='../editpwd/editpwd'>
+    <view class='cell-li-l'>
+      <text>修改密码</text>
+    </view>
+    <view class='cell-li-r'>
+      <text></text>
+      <image src='../../static/images/rr_rr.png' mode='scaleToFill' />
+    </view>
+  </navigator>
+
+  <navigator url='../editphone/editphone' class='cell-li flex'>
+    <view class='cell-li-l'>
+      <text>修改手机</text>
+    </view>
+    <view class='cell-li-r'>
+      <text></text>
+      <image src='../../static/images/rr_rr.png' mode='scaleToFill' />
+    </view>
+  </navigator>
+
+  <view class='cell-li flex'   bindtap='clearStorage'>
+    <view class='cell-li-l'>
+      <text>清除缓存</text>
+    </view>
+    <view class='cell-li-r'>
+      <text>{{num}}KB</text>
+      <image src='../../static/images/rr_rr.png' mode='scaleToFill' />
+    </view>
+  </view>
+
+  <navigator class='cell-li flex' url='../about/about'>
+    <view class='cell-li-l'>
+      <text>关于我们</text>
+    </view>
+    <view class='cell-li-r'>
+      <text></text>
+      <image src='../../static/images/rr_rr.png' mode='scaleToFill' />
+    </view>
+  </navigator>
+
+</view>
+<view class='btn-without mt130'>
+<button class='warn' type="warn" size="default"  
+     bindtap="logout"  > 退出登录 </button>
+</view>
+

@@ -1,0 +1,71 @@
+<!--pages/questiona_detail/questiona_detail.wxml-->
+
+<view class='qa-head'>
+  <view class='qa-title'>{{questionlist.question.questionContent}}</view>
+  <!-- <view class='flex li-sheq-m'>   
+            <view wx:for="{{item.imgUrl}}" wx:for-item="j">
+               <image src='{{j}}' mode='scaleToFill' />               
+            </view> 
+          </view> -->
+
+  <view class='qa-head-b flex'>
+    <view class='qah-b-left flex'>
+      <image src='{{questionlist.questionUser.avatarUrl}}' mode='aspectFit' />
+      <view>{{questionlist.questionUser.nickName}}</view>
+      <text>{{questionlist.question.createTime}}</text>
+    </view>
+    <view class='qah-b-right'>
+      <image src='../../static/images/icon_comment.png' mode='aspectFit' />
+      <text>{{questionlist.userAnswers.length}}</text>
+    </view>
+  </view>
+
+</view>
+
+<view class='qa-yhhd'>用户回答</view>
+<view class='qa-ulist'>
+
+
+  <view class='qa-list' wx:for='{{questionlist.userAnswers}}'>
+    <view class='qa-title'>{{item.answer.answerContent}}</view>
+    <view class='qa-head-b flex'>
+      <view class='qah-b-left flex'>
+        <image src='{{item.user.avatarUrl}}' mode='aspectFit' />
+        <view>{{item.user.nickName}}</view>
+
+      </view>
+      <view class='qah-b-right'>
+
+        <text>{{item.answer.answerTime}}</text>
+      </view>
+    </view>
+  </view>
+
+
+ <!-- <view class='qa-list'>
+    <view class='qa-title'>哥伦比亚35人名单：J罗法尔考领衔罗法 尔考领衔？</view>
+    <view class='qa-head-b flex'>
+      <view class='qah-b-left flex'>
+        <image src='../../static/images/icon_head.png' mode='aspectFit' />
+        <view>放羊的小星</view>
+
+      </view>
+      <view class='qah-b-right'>
+
+        <text>5分钟前</text>
+      </view>
+    </view>
+  </view> -->
+
+
+</view>
+
+<!-- 发送回答  -->
+
+<view class='send-answer'>
+  <view class='send-answer-box flex'>
+    <input type='text' bindinput="bindinput"></input>
+    <button bindtap='sendData'>发送</button>
+  </view>
+
+</view>

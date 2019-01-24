@@ -1,0 +1,42 @@
+<!--pages/product_exchange1/product_exchange1.wxml-->
+<view class='product-head'>
+  <image src='../../static/images/product_head2.jpg' mode='widthFix' />
+</view>
+
+<view class='product-jy-card flex'>
+  <view class='l-card'>{{service.title}}
+    
+  </view>
+  <!-- <view class='r-jf'>{{service.price}}
+    <text>积分</text>
+  </view> -->
+</view>
+
+ <view class='service-js'>
+  <view class='sjs-title'>服务介绍</view>
+  <view class='sjs-list flex'>
+    <!-- <text>服务名称：</text> -->
+    <view>{{service.context}}</view>
+  </view>
+<!-- <view class='sjs-list flex'>
+    <text>服务分类： </text>
+    <view>美容</view>
+  </view>
+  <view class='sjs-list flex'>
+    <text>服务效果：</text>
+    <view>发动机出了问题，其它保养也白搭！保持定期清洗养护发动机，还你爱车一颗强劲有力  </view>
+  </view> -->
+
+
+ </view>
+
+ 
+<view class='con-zysx con-zysx-last'>
+  <view class='con-zysx-t'>预约须知</view>
+  <view class='con-zysx-p'>1.预约后可在预约时间内到店直接享受服务，未预约到店，消费高峰期时可能需要等位  </view>
+
+</view>
+
+<!-- <navigator url="../online_yy/online_yy" class='fixed-ljdh'>
+  <button class='btn-ljdh'>立即预约</button>
+</navigator> -->

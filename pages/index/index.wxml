@@ -1,0 +1,15 @@
+<!--index.wxml-->  
+<view>
+  <view class='userinfo flex flex-cc' wx:if="{{!hasUserInfo && canIUse}}">
+    <button class='btn-userinfo'  open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 允许获取用户信息 </button>
+  </view>
+ 
+   <block wx:else>
+     <view>
+     正在获取用户信息
+     </view>
+    </block>
+
+
+</view>
+

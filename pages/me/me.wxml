@@ -1,0 +1,136 @@
+<!--pages/me/me.wxml-->
+ <view class='me-head'>
+   <view class='flex mh-head ' >
+    <view class='mhh-left'>
+       <image src='{{userinfo.avatarUrl}}' mode='widthFix' />
+       <view class='text'>{{userinfo.nickName}}</view>
+    </view>
+<view>
+ </view>
+    <block wx:if='{{userdata.isSign === "未签到"}}'>
+     <view class='mhh-right' bindtap='submitQD'>
+      <image src='../../static/images/me_qiandao.png'   />
+    </view>
+     </block>
+   
+  </view>
+
+<!--四个item 问答  -->
+<view class='me-head-ul flex'>
+  <navigator  url="../me_qustiona/me_qustiona"  class='mhu-li'>
+    <view class='mdl-icon'>
+      <image src='../../static/images/me_item1.png' mode='aspectFit'  />
+    </view>
+    <view class='mdl-text'>我的回答</view> 
+  </navigator>
+
+   <navigator  url="../me_tiwen/me_tiwen"  class='mhu-li'>
+    <view class='mdl-icon'>
+      <image src='../../static/images/me_item2.png'   mode='aspectFit'/>
+    </view>
+    <view class='mdl-text'>我的提问</view>
+  </navigator>
+
+   <navigator  url="../me_yy/me_yy" class='mhu-li'>
+    <view class='mdl-icon'>
+      <image src='../../static/images/me_item3.png'  mode='aspectFit' />
+    </view>
+    <view class='mdl-text'>我的预约</view>
+  </navigator>
+
+   <navigator  url="../me_report/me_report" class='mhu-li'>
+    <view class='mdl-icon'>
+      <image src='../../static/images/me_item4.png'  mode='aspectFit' />
+    </view>
+    <view class='mdl-text'>我的上报</view>
+  </navigator>
+</view>
+
+</view>
+
+<!--todo  积分任务  -->
+<view class='me-section'>
+  <view class='me-s-title'>积分任务 <text>完成积分任务，兑换豪华大礼</text></view>
+  <view class='ms-s-ul flex'>
+   
+    <view class='msu-li'>
+      <view class='msu-li-t1'>
+       <image src='../../static/images/me_li_item1.png'  mode='aspectFit' />
+      </view>
+      <view class='msu-text-qd'>每日签到</view>
+      <view class='msu-text-jf'>+1积分</view>
+     
+  <view class='msu-li-b'  wx:if='{{userdata.isSign === "已签到"}}'>已完成</view>
+     <view wx:else class='msu-li-b' >
+未完成
+     </view>
+     
+     
+    
+ 
+
+    </view>
+
+    <navigator open-type='switchTab' url='../shequ/shequ' class='msu-li'>
+      <view class='msu-li-t1'>
+       <image src='../../static/images/me_li_item2.png'  mode='aspectFit' />
+      </view>
+      <view class='msu-text-qd'>回答问题</view>
+      <view class='msu-text-jf'>+1积分</view>
+      <view class='msu-li-b'>做任务</view>
+    </navigator>
+
+    <view class='msu-li'>
+      <view class='msu-li-t1'>
+       <!-- <image src='../../static/images/me_li_item2.png'  mode='aspectFit' /> -->
+      </view>
+      <view class='msu-text-qd'>敬请期待</view>
+      <!-- <view class='msu-text-jf'>+10积分</view>
+      <view class='msu-li-b'>已完成</view> -->
+    </view>
+  
+  </view>
+</view>
+
+<view class='cell-ul'>
+  <view class='cell-li flex'>
+    <view class='cell-li-l'>
+      <image src='../../static/images/me_list_item1.png'  mode='scaleToFill' />
+      <text>我的积分</text>
+    </view>
+    <navigator  url="../jf_detail/jf_detail"   class='cell-li-r'>
+      <text>{{userdata.totalScore}}</text>
+      <image src='../../static/images/rr_rr.png'  mode='scaleToFill' />
+    </navigator>
+  </view>
+
+  <navigator url="../feedback/feedback" class='cell-li flex'>
+    <view class='cell-li-l'>
+      <image src='../../static/images/me_list_item2.png'  mode='scaleToFill' />
+      <text>意见反馈</text>
+    </view>
+    <view class='cell-li-r'>
+      <image src='../../static/images/rr_rr.png'  mode='scaleToFill' />
+    </view>
+  </navigator>
+
+  <navigator url="../helpcenter/helpcenter"  class='cell-li flex'>
+    <view class='cell-li-l'>
+      <image src='../../static/images/me_list_item3.png'  mode='scaleToFill' />
+      <text>帮助中心</text>
+    </view>
+    <view class='cell-li-r'>
+      <image src='../../static/images/rr_rr.png'  mode='scaleToFill' />
+    </view>
+  </navigator>
+
+  <navigator url="../setting/setting"  class='cell-li flex'>
+    <view class='cell-li-l'>
+      <image src='../../static/images/me_list_item4.png'  mode='scaleToFill' />
+      <text>设置</text>
+    </view>
+    <view class='cell-li-r'>
+      <image src='../../static/images/rr_rr.png'  mode='scaleToFill' />
+    </view>
+  </navigator>
+</view>

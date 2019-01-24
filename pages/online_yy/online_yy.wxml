@@ -1,0 +1,90 @@
+<!--pages/online_yy/online_yy.wxml-->
+
+<view class='online-yy-ul setting-cell-ul shaddress-ul '>
+
+  <view class='cell-li flex'>
+    <view class='cell-li-l'>
+      <text>预约车辆</text>
+    </view>
+    <view class='cell-li-r  '>
+      <!-- <input placeholder='预约车辆'></input> -->
+      <!-- <image src='../../static/images/rr_rr.png' mode='aspectFit' /> -->
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          {{array[index]}}
+          
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class='cell-li flex'>
+    <view class='cell-li-l'>
+      <text>预约4S店</text>
+    </view>
+    <view class='cell-li-r'>
+      <!-- <input type='text' placeholder='联系电话'></input> -->
+      <input disabled="true" value='{{fours.storeName}}' placeholder='预约4S店'></input>
+      <image src='../../static/images/rr_rr.png' mode='aspectFit' />
+    </view>
+  </view>
+
+  <view class='cell-li flex'>
+    <view class='cell-li-l'>
+      <text>预约时间</text>
+    </view>
+
+
+    <view class='cell-li-r'>
+      <picker mode="date" bindchange="addressChange">
+        <view class="picker">
+          {{address}}
+        </view>
+      </picker>
+
+      <image src='../../static/images/rr_rr.png' mode='aspectFit' />
+    </view>
+  </view>
+
+  <view class='cell-li flex'>
+    <view class='cell-li-l'>
+      <text>联系电话</text>
+    </view>
+    <view class='cell-li-r'>
+      <input bindinput='inputphone' value='{{phone}}' type='number' placeholder='联系电话' placeholder-class='huise'></input>
+    </view>
+  </view>
+
+  <view class='cell-li'>
+    <view class='cell-jianjie-li cell-li-l'>
+      <text>备注 </text>
+    </view>
+    <view class='cell-jianjie'>
+      <textarea bindinput="bindTextAreaBlur" value='{{remarks}}' placeholder="请输入您的备注 " />
+    </view>
+    <view class='image-upload-area flex'>
+
+
+      <!-- <block wx:for="{{imageArr}}">
+        <view class='upload-image' data-index="{{index}}" bindtap='chooseImage'>
+          <image src='{{item.url}}' mode=' ' />
+        </view>
+
+      </block> 
+
+      <view class='upload-image' bindtap='uploadImg'>
+        <image src='../../static/images/upload_preview.png' mode='aspectFit' />
+      </view> -->
+
+
+    </view>
+  </view>
+
+
+</view>
+
+
+
+
+<view class='btn-without mt130'>
+  <button class='default' type="default" size="default" bindtap="submitData"> 确认预约 </button>
+</view>

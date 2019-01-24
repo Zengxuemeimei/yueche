@@ -1,0 +1,251 @@
+/**app.wxss**/
+
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}  */
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-cc {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+/*todo 新闻列表  */
+
+.home-news {
+  margin: 40rpx 32rpx;
+}
+
+.hn-head text {
+  font-size: 34rpx;
+  color: #353535;
+  font-weight: 700;
+}
+
+.hn-head navigator {
+  font-size: 22rpx;
+  color: #888;
+  background: url(https://i.loli.net/2018/07/10/5b44bfe6892bf.png) no-repeat right center;
+  background-size: 10rpx 16rpx;
+  padding-right: 30rpx;
+}
+
+.news-list {
+  border-bottom: 1rpx solid #ddd;
+  padding: 26rpx 0;
+}
+
+.news-ll view {
+  font-size: 31rpx;
+  color: #353535;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.news-ll {
+  width: 415rpx;
+}
+
+.news-ll text {
+  font-size: 22rpx;
+  color: #888;
+}
+
+.news-lr {
+  width: 230rpx;
+  height: 130rpx;
+}
+
+.news-lr image {
+  width: 230rpx;
+  height: 130rpx;
+}
+
+/* todo 单行cell   */
+
+.cell-li-r {
+  line-height: 106rpx;
+  vertical-align: middle;
+}
+
+.cell-li-r image {
+  width: 11rpx;
+  height: 19rpx;
+  vertical-align: middle;
+}
+.cell-li-r image.head-img{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 30rpx;
+}
+.cell-li-r text {
+  color: #60c5ff;
+  font-size: 28rpx;
+  margin-right: 30rpx;
+}
+
+.cell-li-l image {
+  width: 30rpx;
+  max-height: 30rpx;
+  vertical-align: middle;
+  margin-right: 16rpx;
+}
+
+.cell-li-l text {
+  color: #353535;
+  font-size: 28rpx;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}
+
+.cell-ul {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.cell-li {
+  border-bottom: 1rpx solid #ddd;
+  line-height: 108rpx;
+  padding-right: 30rpx;
+}
+
+.cell-ul .cell-li:nth-last-child(1) {
+  border: 0;
+}
+
+/* 兑换明细列表  */
+
+.exchange-ul {
+  padding-left: 30rpx;
+}
+
+.exchange-li {
+  padding: 30rpx 30rpx 30rpx 0;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.exchange-li-l view {
+  color: #353535;
+  font-size: 30rpx;
+  line-height: 1.2;
+  margin-bottom: -10rpx;
+}
+
+.exchange-li-l text {
+  color: #888;
+  font-size: 22rpx;
+}
+
+.exchange-li-r {
+  font-size: 46rpx;
+  color: #5fc4fe;
+  font-family: sans-serif;
+}
+
+.exchange-li-r text {
+  font-size: 24rpx;
+}
+
+.setting-cell-ul {
+}
+
+.setting-cell-ul .cell-li {
+  padding-left: 30rpx;
+}
+
+.setting-cell-ul .cell-li .cell-li-r text {
+  color: #cdcdcd;
+}
+
+.btn-without {
+  margin: 30rpx;
+}
+
+button {
+  font-size: 32rpx;
+  line-height: 100rpx;
+}
+
+button.warn {
+  background: #f96464;
+}
+
+.mt130 {
+  margin-top: 130rpx;
+}
+
+/*收货地址  */
+
+.shaddress-ul .cell-li-r input {
+  color: #353535;
+  font-size: 28rpx;
+  text-align: right;
+}
+.huise{
+  color: #cacaca;
+}
+.shaddress-ul picker{
+  display: inline-block;
+  color: #353535;
+  font-size: 28rpx;
+  text-align: right;
+  margin: 8rpx;
+}
+button.default{
+  background: #60c5ff;
+  color: #fff;
+  border: 0;
+}
+.person-ul .cell-li-r input{
+  display: inline-block;
+  margin-right: 30rpx;
+  vertical-align: middle;
+}
+.cell-jianjie textarea{
+  width: 100%;
+  font-size: 22rpx;
+  color: #666;
+  line-height: 1.4;
+  padding: 10rpx 0;
+  height: 5em;
+}
+.cell-jianjie-li{
+  line-height: 50rpx;
+  padding-top: 30rpx;
+}
+
+.image-upload-area{
+  justify-content: flex-start;
+  padding: 10rpx 0;
+  padding-bottom: 30rpx;
+}
+.image-upload-area .upload-image{
+  margin-right: 30rpx;
+  position: relative;
+  height: 60rpx;
+  width: 60rpx;
+  border-radius: 6rpx;
+  
+}
+.upload-image image{
+  width: 60rpx;
+  height: 60rpx;
+}

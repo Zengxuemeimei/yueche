@@ -1,0 +1,30 @@
+<view class='exchange-ul'>
+  <view class='exchange-li flex'>
+    <view class='exchange-li-l'>
+      <view>加油卡</view>
+      <text>意见反馈</text>
+    </view>
+    <view class='exchange-li-r'>- 9999
+      <text>积分</text>
+    </view>
+  </view>
+
+  <view class='exchange-li flex'>
+    <view class='exchange-li-l'>
+      <view>加油卡</view>
+      <text>意见反馈</text>
+    </view>
+    <view class='exchange-li-r'>- 9999
+      <text>积分</text>
+    </view>
+  </view>
+  <view class='exchange-li flex'>
+    <view class='exchange-li-l'>
+      <view>加油卡</view>
+      <text>意见反馈</text>
+    </view>
+    <view class='exchange-li-r'>- 9999
+      <text>积分</text>
+    </view>
+  </view>
+</view>

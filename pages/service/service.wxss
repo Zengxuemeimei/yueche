@@ -1,0 +1,145 @@
+/* pages/service/service.wxss */
+
+.service-ban {
+  height: 320rpx;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.service-ban image {
+  height: 320rpx;
+  width: 100%;
+  z-index: 2;
+}
+
+.service-fix1 {
+  position: relative;
+  background: #f00;
+  z-index: 3;
+}
+
+.service-fix {
+  position: relative;
+  z-index: 99;
+  margin: -90rpx 30rpx 20rpx 30rpx;
+  padding: 34rpx;
+  background: #fff;
+  box-shadow: 0px 5rpx 20rpx #eee;
+  border-radius: 8rpx;
+}
+
+.service-fix > .flex {
+}
+
+.service-fix .section {
+  background: #fff;
+}
+
+.service-fix .picker {
+  font-size: 34rpx;
+  color: #353535;
+  line-height: 55rpx;
+}
+
+.service-fix .picker text {
+  display: inline-block;
+  margin-right: 5rpx;
+  width: 20rpx;
+  height: 30rpx;
+  background: url(https://i.loli.net/2018/07/11/5b4600046b3d3.png) no-repeat right center;
+  background-size: 18rpx 10rpx;
+}
+
+.service-fix .ss-p {
+  font-size: 26rpx;
+  color: #888;
+  background: #fff;
+}
+
+.ss-zxyy {
+  text-align: center;
+}
+
+.ss-zxyy image {
+  width: 54rpx;
+  height: 52rpx;
+}
+
+.ss-zxyy  view {
+  color: #60c5ff;
+  font-size: 24rpx;
+}
+
+.zshd-box {
+  padding: 15rpx 0;
+}
+
+.service-sect {
+  padding: 20rpx 30rpx;
+}
+
+.ss-t {
+  font-size: 34rpx;
+  color: #333;
+  font-weight: 700;
+}
+
+.zshd-list {
+  background: url(https://i.loli.net/2018/07/11/5b460104896ee.png) no-repeat center center;
+  background-size: 220rpx 150rpx;
+  width: 220rpx;
+  height: 150rpx;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 7rpx;
+}
+
+.zshd-list text {
+  display: inline-block;
+  font-size: 24rpx;
+  color: #fff;
+  line-height: 44rpx;
+  height: 50rpx;
+}
+
+.zshd-list view {
+  font-size: 22rpx;
+  color: #fff;
+  margin-top: 6rpx;
+}
+
+.zshd-box .zshd-list:nth-child(2) {
+  background-image: url(https://i.loli.net/2018/07/11/5b46045da2743.png);
+}
+
+.zshd-box .zshd-list:nth-child(3) {
+  background-image: url(https://i.loli.net/2018/07/11/5b46045da4129.png);
+}
+.yy-service{
+  margin: 0 -20rpx;
+}
+.yy-service-ul{
+ 
+  justify-content: flex-start;
+  flex-wrap:wrap;
+ 
+}
+.yy-service-li{
+  text-align: center;
+  width: 25%;
+ margin-top: 30rpx;
+}
+.yy-service-li image{
+  width: 72rpx;
+  height: 72rpx;
+  margin-bottom: -20rpx;
+}
+.yy-service swiper{
+  width: 100vw;
+}
+.yy-service-li text{
+  font-size: 24rpx;
+  color: #353535;
+
+}

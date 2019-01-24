@@ -1,0 +1,9 @@
+/* pages/feedback/feedback.wxss */
+
+.cell-feedback{
+  padding-top: 14rpx;
+  font-size: 28rpx;
+}
+.cell-feedback textarea{
+  font-size:28rpx;
+}

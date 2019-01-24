@@ -1,0 +1,73 @@
+<view>
+  <view wx:if="{{isactive}}" class='sq-nav flex'>
+    <view class='on'>互动</view>
+    <view bindtap='changeState' data-state="1">新闻</view>
+  </view>
+  <view wx:else class='sq-nav flex'>
+    <view bindtap='changeState' data-state="2">互动</view>
+    <view class='on'>新闻</view>
+  </view>
+
+  <block wx:if="{{isactive}}">
+
+    <!-- 问答  -->
+    <view class='ul-box'>
+      
+        <navigator url='../questiona_detail/questiona_detail?id={{item.id}}' class='li-shequ' wx:for="{{qwlist}}">
+           
+          <view class='li-sheq-t'>{{item.questionContent}}</view>
+          <view class='flex li-sheq-m'>   
+            <view wx:for="{{item.imgUrl}}" wx:for-item="j">
+               <image src='{{j}}' mode='scaleToFill' />               
+            </view> 
+          </view>
+
+          <view class='li-sheq-b flex'>
+            <view>
+              <view class='lsb-head'>
+                <image src='{{item.avatarUrl}}' mode='widthFix' />
+                <view class='anda-text'>{{item.nickName}}</view>
+              </view>
+              <text class='prev-min'>{{item.createTime}}</text>
+            </view>
+            <view class='comment-icon'>{{item.answerCount}}</view>
+          </view>      
+        </navigator>
+        
+      </view>
+
+  </block>
+  <block wx:else>
+
+    <!-- 新闻  -->
+    <view class='home-news'>
+      <view class='hn-con '>
+ <block  wx:for="{{newsdata}}">
+        <navigator url="../news_detail/news_detail?id={{item.id}}"   class='news-list flex ' >
+          <view class='news-ll'>
+            <view>{{item.title}} </view>
+            <text>{{item.createTime}}</text>
+          </view>
+          <view class='news-lr'>
+            <image src='{{item.imgUrl}}' />
+          </view>
+        </navigator>
+        </block>
+
+        <!-- <view class='news-list flex'>
+        <view class='news-ll'>
+          <view>哪有那么多真皮座椅？告诉你 汽车皮料有哪些</view>
+          <text>2018-03-07  10:45</text>
+        </view>
+        <view class='news-lr'>
+          <image src='../../static/images/news_ban.jpg'/>
+        </view>
+      </view>
+        -->
+      </view>
+
+    </view>
+  </block>
+
+
+  </view>

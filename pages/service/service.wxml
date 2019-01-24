@@ -1,0 +1,127 @@
+<!--pages/service/service.wxml-->
+
+<view class="service-ban">
+  <image src='../../static/images/service_ban.jpg ' />
+</view>
+
+<view class='service-fix'>
+  <view class='flex'>
+    <view class="section">
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          {{array[index]}}
+          <text></text>
+        </view>
+      </picker>
+      <view class='ss-p'>追求卓越，服务尽善尽美 </view>
+    </view>
+ 
+    <view class='ss-zxyy'  bindtap='clickOnlineYy'>
+      <image src='../../static/images/iconxx.png ' mode='widthFix' />
+      <view>在线预约</view>
+    </view>
+  </view>
+
+</view>
+
+<view class='service-sect'>
+  <view class='ss-t'>专属活动</view>
+  <view class='flex zshd-box'>
+    <navigator class='zshd-list' url='../news_detail/news_detail?id=abbffe7a29754ffaac21b5de45b4dbf9'>
+      <text>热门活动 </text>
+      <view>点击查看详情</view>
+    </navigator>
+    <navigator class='zshd-list' url="../save_oil/save_oil"> 
+      <text>每日攒油</text>
+      <view>免费兑换机油</view>
+    </navigator>
+    <navigator class='zshd-list' url='../news_detail/news_detail?id=71948aea240d47bb8984a44adfadcafd'>
+      <text>超值优惠 </text>
+      <view>点击查看详情</view>
+    </navigator>
+  </view>
+</view>
+
+
+<view class='service-sect'>
+  <view class='ss-t'>拥有服务</view>
+  <view class='flex yy-service'>
+    <swiper class='home-swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+
+      <swiper-item>
+        <view class='flex yy-service-ul '>
+            <block wx:for="{{serviceList}}">
+          <navigator url='../product_exchange2/product_exchange2?id={{item.id}}' class='yy-service-li'>
+                    <view>
+                      <image src='../../static/images/service_item{{index+1}}.png ' />
+                    </view>
+                    <text>{{item.title}}</text>
+                  </navigator>
+        </block>
+         
+<!-- 
+          <view class='yy-service-li'>
+            <view>
+              <image src='../../static/images/service_item2.png ' />
+            </view>
+            <text>真皮保养</text>
+          </view>
+          <view class='yy-service-li'>
+            <view>
+              <image src='../../static/images/service_item3.png ' />
+            </view>
+            <text>喷油嘴清洗</text>
+          </view>
+          <view class='yy-service-li'>
+            <view>
+              <image src='../../static/images/service_item4.png ' />
+            </view>
+            <text>刹车系统养护</text>
+          </view>
+
+          <view class='yy-service-li'>
+            <view>
+              <image src='../../static/images/service_item5.png ' />
+            </view>
+            <text>火花塞更换</text>
+          </view>
+          <view class='yy-service-li'>
+            <view>
+              <image src='../../static/images/service_item6.png ' />
+            </view>
+            <text>抛光打蜡</text>
+          </view>
+          <view class='yy-service-li'>
+            <view>
+              <image src='../../static/images/service_item7.png ' />
+            </view>
+            <text>三元催化清洗</text>
+          </view>
+          <view class='yy-service-li'>
+            <view>
+              <image src='../../static/images/service_item8.png ' />
+            </view>
+            <text>缸内积炭清洗</text>
+          </view> -->
+        </view>
+      </swiper-item>
+      
+      <!-- <swiper-item>
+        <view class='flex yy-service-ul '>
+          <view class='yy-service-li'>
+            <view>
+              <image src='../../static/images/service_item1.png ' />
+            </view>
+            <text>发动机清洗</text>
+          </view>
+          <view class='yy-service-li'>
+            <view>
+              <image src='../../static/images/service_item2.png ' />
+            </view>
+            <text>真皮保养</text>
+          </view>
+        </view>
+      </swiper-item> -->
+    </swiper>
+  </view>
+</view>

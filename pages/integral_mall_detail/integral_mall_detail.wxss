@@ -1,0 +1,36 @@
+/* pages/integral_mall_detail/integral_mall_detail.wxss */
+
+.ul-duihuan{
+  padding: 0 30rpx;
+}
+.li-duihuan{
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+.dh-img image{
+ width: 200rpx;
+ height: 120rpx;
+ display: inline-block;
+}
+.dh-img{
+  background: #f2f2f2;
+}
+.dh-img,
+.dh-con{
+display: inline-block;
+}
+.dh-con{
+  margin-left: 30rpx;
+}
+.dh-con view{
+  font-size: 30rpx;
+  color: #333;
+}
+.dh-con text{
+  color: #808080;
+  font-size: 24rpx; 
+}
+.r-jf{
+  font-size: 26rpx;
+  color: #808080;
+}

@@ -1,0 +1,27 @@
+<!--pages/a_login/login.wxml-->
+<view class='login-head flex flex-cc'>
+ <image  class='login-head-img' src='../../static/images/me_head.png' mode='aspectFit' />
+</view>
+<view class='login-ul'>
+  <view class='login-cell'>
+    <image  class='login-head-img' src='../../static/images/icon_phone.png' mode='aspectFit' />
+    <input data-key="phone" value='{{phone}}' bindinput="bindinput" type='number' placeholder='请输入您的手机号'></input>
+  </view>
+  <view class='login-cell'>
+    <image  class='login-head-img' src='../../static/images/icon_lock.png' mode='aspectFit' />
+    <input value='{{password}}' class='' type='password'  bindinput="bindinputPwd"  placeholder='请输入您的密码'></input>
+
+  </view>
+
+  <view class='login-cell-other flex'>
+    <view class='lco-left'><view>登录即同意</view> <navigator url=''>《用户服务协议》</navigator></view>
+    <navigator class='lco-right' url="../forget_password/forget_password">忘记密码？</navigator>
+  </view>
+
+</view>
+
+<view class='btn-without  '>
+  <button class='default' type="default" size="default" bindtap="login"> 登录 </button>
+
+  <navigator class='login-register-btn' url='../a_register/a_register'>立即注册</navigator>
+</view>

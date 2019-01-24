@@ -1,0 +1,26 @@
+/* pages/map_now/map_now.wxss */
+
+.map{
+  width: 100vw;
+  height:  100vh;
+}
+
+.map_container{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.choose-date{
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  bottom:  0;
+  background: #fff;
+  padding: 30rpx 20rpx;
+  font-size: 30rpx;
+}
+ 

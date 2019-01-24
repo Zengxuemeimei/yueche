@@ -1,0 +1,19 @@
+
+
+<view>
+
+  <view class='ul-duihuan'>
+    <view class='li-duihuan flex'  wx:for="{{datalist}}" wx:key="*this">
+      <view class='flex'>
+        <view class='dh-img'>
+           <view>{{item.record_type}}</view>
+           <text>{{item.create_time}}</text>
+        </view>
+         
+      </view>
+
+      <view class='r-jf r-green' wx:if="{{item.integral>=0}}">+{{item.integral}} 积分</view>
+ <view class='r-jf' wx:else>{{item.integral}} 积分</view>
+    </view>
+  </view>
+</view>

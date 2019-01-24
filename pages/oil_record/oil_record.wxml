@@ -1,0 +1,26 @@
+<!--pages/oil_record/oil_record.wxml-->
+<view class='detail'>
+  <view class='detail-box'>
+      <text bindtap='clickSave' class='{{isChecked ? "changeEffect":""}}'>攒油记录</text>
+      <text bindtap='clickExchange' class='{{isChecked ? " ":"changeEffect"}}'>兑换记录</text>
+  </view>
+  <view class='empty'></view>  
+  <view wx:if="{{isSaveOil}}" class='detail-day' wx:for="{{saveOilRes}}" wx:key="*this">
+     <view class='saveOil-box'>
+        <text class='detail-day-text'>每日攒油</text>
+        <text class='time'>{{item.created_at}}</text>
+     </view>
+     <view class='oil-mass'>
+        <text >+ <text class='oil-num'>{{item.num}}</text>ML</text>
+     </view>
+  </view>
+  <view wx:if="{{!isSaveOil}}" class='detail-day' wx:for="{{exchangeOilRes}}" wx:key="*this">
+     <view class='saveOil-box'>
+        <text class='detail-day-text'>已兑换油量</text>
+        <text class='time'>{{item.created_at}}</text>
+     </view>
+     <view class='oil-mass'>
+        <text>- <text class='oil-num'>{{item.num}}</text>ML</text>
+     </view>
+  </view>
+</view>

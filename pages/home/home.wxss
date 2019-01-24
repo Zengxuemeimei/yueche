@@ -1,0 +1,155 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+ 
+}
+
+.home-swiper{
+  width: 100%;
+  height: 280rpx;
+
+}
+.home-menu{
+    margin-top: 25rpx;
+    text-align: center;
+}
+.menu-list view{
+    width: 100%;
+   height: 114rpx;
+   margin-bottom: -20rpx;
+}
+.menu-list view image{
+  width: 114rpx;
+}
+.menu-list text{
+  display: inline-block;
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1;
+  margin-top: -25rpx;
+}
+.home-section1{
+
+}
+
+.home-sect1-title{
+  background: #60c5ff;
+  padding-top: 16rpx;
+  line-height: 56rpx;
+  margin: 0 56rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  padding-left: 20rpx;
+  padding-right: 14rpx;
+
+}
+.home-sect1-title text{
+  font-size: 22rpx;
+  color: #fff;
+line-height: 56rpx;
+}
+.home-sect1-title view{
+   font-size: 26rpx;
+  color: #fff;
+line-height: 56rpx;
+}
+.home-section1{
+  margin-top: 37rpx;
+}
+.home-sect1-box{
+  background: #fff;
+  margin: 0 30rpx;
+  padding: 18rpx 28rpx;
+
+   box-shadow:0px 5rpx 20rpx #eee;
+   border-radius: 7rpx;
+}
+.home-add image{
+  width: 98rpx;
+  height: 98rpx;
+}
+
+.hsb-t-tip {
+  font-size: 22rpx;
+  color : #333;
+
+}
+
+.hsb-t-tip text{
+  display: inline-block;
+  border: 1rpx solid #f96464;
+  color: #f96464;
+  font-size: 22rpx;
+  padding: 0rpx 8rpx;
+  line-height: 28rpx;
+  border-radius: 4rpx;
+  margin-right: 4rpx;
+   
+}
+.hsb-tt-l view{
+  font-size: 40rpx;
+  color: #60c5ff;
+}
+
+.hsb-tt-l text{
+  font-size: 22rpx;
+  color: #888;
+  margin-top: 20rpx;
+}
+.hsb-t-box{
+  margin-top: 50rpx;
+}
+.hsb-menu-list{
+  text-align: center;
+} 
+.hsb-menu-list view{
+
+}
+.hsb-menu-list view image{
+  width: 72rpx;
+  height: 72rpx;
+  margin-bottom: -20rpx;
+}
+.hsb-menu-list text{
+  color: #353535;
+  font-size: 24rpx;
+  line-height: 24rpx;
+}
+.hsb-bottom{
+  margin-top: 48rpx;
+  border-top: 1rpx solid #ddd;
+  padding: 20rpx 30rpx 14rpx;
+}
+
+.slide-image{
+  width: 100vw;
+}
+.userinfo{
+  position: fixed;
+  /* background: rgba(0,0,0,.5); */
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 5000;
+
+}
+.btn-userinfo{
+  
+}

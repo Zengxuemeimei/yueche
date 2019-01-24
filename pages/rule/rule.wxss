@@ -1,0 +1,14 @@
+/* pages/rule/rule.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.ruleBj{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.ruleBj image{
+  width: 100%;
+  height: 100%;
+}

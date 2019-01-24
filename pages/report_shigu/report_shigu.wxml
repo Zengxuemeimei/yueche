@@ -1,0 +1,66 @@
+<!--pages/online_yy/report_shigu.wxml-->
+
+<view class='online-yy-ul setting-cell-ul shaddress-ul '>   
+  <view class='cell-li flex'>
+    <view class='cell-li-l'>
+      <text>事故车辆</text>
+    </view>
+    <view class='cell-li-r'>
+      <picker  bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+         {{array[index]}}
+        </view>
+      </picker>
+
+      <image src='../../static/images/rr_rr.png' mode='aspectFit' />
+    </view>
+  </view>
+
+ <view class='cell-li flex'>
+    <view class='cell-li-l'>
+      <text>报案地点</text>
+    </view>
+    <view class='cell-li-r'>
+      <!-- <picker mode="region" bindchange="addressChange">
+        <view class="picker">
+          {{address}}
+        </view>
+      </picker> -->
+      <input value="{{place}}" type='text' bindinput='inputPlace' placeholder='请输入您的地址'></input>
+      
+    </view>
+  </view>
+
+  <view class='cell-li'>
+    <view class='cell-jianjie-li cell-li-l'>
+      <text>备注</text>
+    </view>
+    <view class='cell-jianjie'>
+      <textarea bindblur="bindTextAreaBlur" bindinput="changeText" value="{{remarks}}" placeholder="请输入您的备注" />
+    </view>
+    <view class='image-upload-area flex'>
+
+      <block wx:for="{{imageArr}}">
+         <view class='upload-image' data-index="{{index}}" bindtap='chooseImage'>
+            <image src='{{item.url}}' mode=' ' />
+        </view>
+        
+      </block>
+
+      <view class='upload-image' bindtap='uploadImg'>
+        <image src='../../static/images/upload_preview.png' mode='aspectFit' />
+      </view>
+
+
+    </view>
+  </view>
+
+
+</view>
+
+
+
+
+<view class='btn-without mt130'>
+  <button class='default' type="default" size="default" bindtap="submitData"> 确认上报 </button>
+</view>

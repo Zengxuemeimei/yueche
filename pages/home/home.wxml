@@ -1,0 +1,145 @@
+<!--index.wxml-->  
+<view>
+  <view class='userinfo flex flex-cc' wx:if="{{!hasUserInfo && canIUse}}">
+    <button class='btn-userinfo'  open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 允许获取用户信息 </button>
+  </view>
+ 
+   <block wx:else>
+    
+<view class="container">
+  <swiper class='home-swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+      <swiper-item>
+        <image bindtap='goSaveOil' src="{{item}}" class="slide-image" mode='widthFix' />
+      </swiper-item>
+    </block>
+  </swiper>
+ 
+  <view class='home-menu flex flex-around'>
+    <navigator class='menu-list' url="../report_shigu/report_shigu">
+      <view>
+        <image src='../../static/images/menu1.png' mode='widthFix' />
+      </view>
+      <text>事故上报</text>
+    </navigator>
+    
+     <navigator class='menu-list' url="../tiwen_one/tiwen_one">
+      <view>
+        <image src='../../static/images/menu2.png' mode='widthFix' />
+      </view>
+      <text>一键提问</text>
+    </navigator>
+    <navigator url='../telephone/telephone' class='menu-list'>
+      <view>
+        <image src='../../static/images/menu3.png' mode='widthFix' />
+      </view>
+      <text>应急电话</text>
+    </navigator>
+    <navigator class='menu-list'  url="../integral_mall/integral_mall">
+      <view>
+        <image src='../../static/images/menu4.png' mode='widthFix' />
+      </view>
+      <text>积分商城</text>
+    </navigator>
+
+  </view>
+
+  <!-- 浮框  -->
+  <view class='home-section1'>
+    <view class='home-sect1-title flex'>
+      <text>今日限行：{{valueXianxing}}</text>
+      <view>{{weather}}</view>
+    </view>
+
+    <view class='home-sect1-box'>
+      <view class='hsb-top'>
+        <view class='hsb-t-tip'><text>通知</text> 欢迎使用悦车小程序!</view>
+        <view class='flex hsb-t-box'>
+
+
+          <view class='hsb-tt-l' wx:if='{{thiscars == null}}'>
+            <view>添加爱车</view>
+            <text>让用车生活更轻松</text>
+          </view>
+        
+          <navigator url='../add_car/add_car?id={{thiscars.id}}' class='hsb-tt-l'>
+           <view>{{thiscars.name}}{{thiscars.version}}</view>
+            <text>{{thiscars.code}}</text>
+          </navigator>
+
+          <navigator url="../add_car/add_car" class='home-add' >
+            <image src='../../static/images/home_add.jpg' mode='widthFix'></image>
+          </navigator>
+        </view>
+      </view>
+
+      <view class='hsb-bottom flex '>
+        
+        <navigator url='../map_now/map_now?id={{thiscars.id}}' class='hsb-menu-list'>
+          <view>
+            <image src='../../static/images/midden_menu1.png' mode='widthFix' />
+          </view>
+          <text>实时位置</text>
+        </navigator>
+
+        <navigator  url='../map_history/map_history?id={{thiscars.id}}' class='hsb-menu-list'>
+          <view>
+            <image src='../../static/images/midden_menu2.png' mode='widthFix' />
+          </view>
+          <text>历史轨迹</text>
+        </navigator>
+
+        <navigator url='../map_weilan/map_weilan?id={{thiscars.id}}' class='hsb-menu-list'>
+          <view>
+            <image src='../../static/images/midden_menu3.png' mode='widthFix' />
+          </view>
+          <text>电子围栏</text>
+        </navigator>
+      </view>
+    </view>
+
+
+  </view>
+
+  <!-- 新闻  -->
+   <view class='home-news'>
+    <view class='hn-head flex'>
+      <text>新闻</text>
+      <navigator  open-type="switchTab" url="../shequ/shequ">更多</navigator>
+    </view>
+    
+    <view class='hn-con '>
+ <block  wx:for="{{newsdata}}" wx:key="index">
+    <navigator url="../news_detail/news_detail?id={{item.id}}" class='news-list flex' >
+        <view class='news-ll'>
+          <view>{{item.title}}</view>
+          <text>{{item.createTime}}</text>
+        </view>
+        <view class='news-lr'>
+          <image src='{{item.attach}}'/>
+        </view>
+      </navigator>
+</block>
+
+     
+      <!-- <view class='news-list flex'>
+        <view class='news-ll'>
+          <view>哪有那么多真皮座椅？告诉你 汽车哪有那么多真皮座椅？告诉你 汽车哪有那么多真皮座椅？告诉你 汽车皮料有哪些</view>
+          <text>2018-03-07  10:45</text>
+        </view>
+        <view class='news-lr'>
+          <image src='../../static/images/news_ban.jpg'/>
+        </view>
+      </view> -->
+    </view>
+   
+   </view>
+
+</view>
+
+ 
+    </block>
+
+
+</view>
+

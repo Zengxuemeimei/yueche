@@ -1,0 +1,42 @@
+<!--pages/product_exchange1/product_exchange1.wxml-->
+<view class='product-head'>
+  <image src='{{product.attach}}' mode='aspectFit' />
+</view>
+
+<view class='product-jy-card flex'>
+  <view class='l-card'> 
+    <text>{{product.goodName}}</text>
+  </view>
+  <view class='r-jf'>{{product.goodScore}}
+    <text>积分</text>
+  </view>
+</view>
+
+<!-- <navigator class='product-dizhi flex' url="../shaddress/shaddress">
+  <view>收货地址</view>
+  <view class='pdf-r'>
+    <text> </text>
+    <image src='../../static/images/rr_rr.png' mode='aspectFit' />
+  </view>
+
+</navigator> -->
+
+<view class='con-zysx'>
+  <view class='con-zysx-t'>详细介绍</view>
+  <view class='con-zysx-p'>{{product.goodIntroduction }} </view>
+  <!-- <view class='con-zysx-p'>1. 若有一问，请咨询4000-123-123 </view>
+  <view class='con-zysx-p'>2. 新疆、西藏、青海、宁夏、内蒙古、甘肃等地不在包 邮范围 </view>
+  <view class='con-zysx-p'>3. 若因地址不详，联系电话有误等其它个人因素导致快 递多次配送不成功、延期退回后，我们将不再进行二次 发货，请谅解</view> -->
+</view>
+<view class='con-zysx con-zysx-last'>
+  <view class='con-zysx-t'>特别说明</view>
+  <view class='con-zysx-p'>{{product.remarks}} </view>
+  <!-- <view class='con-zysx-p'>2. 通过非法途径获得的积分兑换商品，商家有权利不提 供服务</view>
+  <view class='con-zysx-p'>3. 若因地址不详，联系电话有误等其它个人因素导致快 递多次配送不成功、延期退回后，我们将不再进行二次 发货，请谅解</view> -->
+
+
+</view>
+
+<view class='fixed-ljdh'>
+  <button bindtap='submitData' class='btn-ljdh'>立即兑换</button>
+</view>

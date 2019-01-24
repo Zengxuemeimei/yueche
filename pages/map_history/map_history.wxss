@@ -1,0 +1,30 @@
+/* pages/map_history/map_history.wxss */ ::after/* pages/map_now/map_now.wxss */
+
+#map,.map{
+  width: 100vw;
+  height:  calc(100vh - 100rpx);
+  z-index: -1;
+}
+
+.map_container{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.choose-date{
+  position: absolute;
+  z-index: 55;
+  left: 0;
+  right: 0;
+  bottom:  0;
+  background: #fff;
+  padding: 30rpx 20rpx;
+  font-size: 30rpx;
+}
+ .choose-date view{
+   height: 40rpx;
+   line-height: 40rpx;
+ }

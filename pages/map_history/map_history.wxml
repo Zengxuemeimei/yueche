@@ -1,0 +1,11 @@
+<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%;z-index:-1; height: calc(100vh - 100rpx)"></map>
+ 
+ <view class="section choose-date">
+  <!-- <view class="section__title">日期选择器</view> -->
+  <picker class='flex' mode="date" value="{{date}}" start="2013-09-01" end="2020-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      选择查询日期： {{date}}
+    </view>
+   
+  </picker>
+</view>

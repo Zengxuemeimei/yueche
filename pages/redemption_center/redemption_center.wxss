@@ -1,0 +1,86 @@
+/* pages/redemption_center/redemption_center.wxss */
+page{
+  height: 100%;
+}
+.exchange-box{
+  height: 22%;
+  background: #2E314B;
+  color:#fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 40rpx;
+  font-size: 32rpx;
+}
+.exchange-box text{
+  display: block;
+  /* margin-bottom: 10px; */
+  line-height: 60rpx;
+}
+.convertible{
+  /* display: inline; */
+}
+.accumulate{
+  font-size: 24rpx;
+  line-height: 30rpx !important;
+}
+.look-up{
+  font-size: 28rpx;
+  color: #6268DB;
+}
+.exchange-list{
+  width: 100%;
+  height: 78%;
+  background: #42455C;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 80rpx 40rpx;
+  box-sizing: border-box;
+  color: #fff;
+}
+.oil-same{
+  width: 326rpx;
+  height: 400rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.oil-one{
+  background: linear-gradient(145deg,#EB6364,#DD216C)
+}
+.oil-two{
+  background: linear-gradient(145deg,#F46FB4,#B821DC)
+}
+.oil-three{
+  margin-top: 20rpx;
+  background: linear-gradient(145deg,#EBBD63,#DDB322)
+}
+.oil-four{
+  margin-top: 20rpx;
+  background: linear-gradient(145deg,#62A2EA,#167CBD)
+}
+.surplus{
+  color: #000;
+  font-size: 24rpx;
+}
+.one-thousand-box{
+  text-align: center;
+  margin: 20rpx 0;
+}
+.one-thousand{
+  font-size: 60rpx;
+}
+.go-exchange{
+  width: 280rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 32rpx;
+  border-radius: 40rpx;
+  margin-top: 20rpx;
+  background: linear-gradient(45deg,#7077FF,#9686FA);
+}
+@media (min-width:768px){
+  page{
+    height: auto;
+  }
+}

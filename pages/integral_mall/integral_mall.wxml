@@ -1,0 +1,33 @@
+<!--pages/integral_mall/integral_mall.wxml-->
+
+<view class='integral-head'>
+  <view class='integral-head-con'>
+    <view class='ihc-top flex'>
+      <view class='ihc-top-l'>
+       <image src='{{userinfo.avatarUrl}}' mode='scaleToFill' />
+        <view class="nickname">{{userinfo.nickName}}</view>
+      </view>
+      <navigator url="../integral_mall_detail/integral_mall_detail" class='ihc-top-r'>兑换明细</navigator>
+    </view>
+    <view class='ihc-bottom'>{{userinfo.integral}}<text> 积分</text></view>
+  </view>
+</view>
+
+<view class='integral-sect'>
+  <view class='integral-sect-t'>精美礼品</view>
+
+<block  wx:for="{{goodlist}}">
+   <navigator  class='integral-sect-image'  url="../product_exchange1/product_exchange1?id={{item.id}}">
+    <image src='{{item.attach}}' mode="scaleToFill" />
+    <view class='integral-sect-rr'>
+      <view class='t'>{{item.goodType}}</view>
+      <view class='m'>{{item.goodName}}</view>
+      <view class='b'>{{item.goodScore}} <text>积分</text></view>
+    </view>
+  </navigator>
+</block>  
+ 
+
+
+
+</view>

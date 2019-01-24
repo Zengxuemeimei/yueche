@@ -1,0 +1,76 @@
+<view>
+  <view wx:if="{{isactive == 1}}" class='sq-nav flex'>
+    <view class='on'>全部</view>
+    <view bindtap='changeState' data-state="2">已预约</view>
+    <view bindtap='changeState' data-state="3">已取消</view>
+  </view>
+
+  <view wx:elif="{{isactive == 2}}" class='sq-nav flex'>
+    <view bindtap='changeState' data-state="1">全部</view>
+    <view class='on'>已预约</view>
+    <view bindtap='changeState' data-state="3">已取消</view>
+  </view>
+
+  <view wx:else class='sq-nav flex'>
+    <view bindtap='changeState' data-state="1">全部</view>
+    <view bindtap='changeState' data-state="2">已预约</view>
+    <view class='on'>已取消</view>
+
+  </view>
+
+
+
+  <!-- 全部  -->
+  <view class='ul-box'> 
+
+  <block wx:for="{{nowData}}">
+    <block wx:if="{{item.status == '0'}}">
+        <view class='li-shequ'>
+      <view class='li-sheq-t flex'>
+        <view>{{item.shopName }}-{{item.carName }}</view>
+        <text> {{item.bespokeTime }}</text>
+      </view>
+      <view class='li-shequ-ts flex'>
+        <view class='lsts-con'>
+          <view class='lsts-address'>{{item.address }}</view>
+          <view class='remark-li'>备注：{{item.remarks }}</view>
+        </view>
+        <view class='lsts-right'>
+          <button bindtap='cancelYY' data-id="{{item.bespokeId}}" class='cancel-report'>取消订单</button>
+        </view>
+      </view>      
+
+    </view>
+    </block>
+    <block wx:else>
+       <view class='li-shequ'>
+      <view class='li-sheq-t flex'>
+        <view>{{item.shopName }}-{{item.carName }}</view>
+        <text>{{item.bespokeTime }}</text>
+      </view>
+      <view class='li-shequ-ts flex'>
+        <view class='lsts-con'>
+          <view class='lsts-address'>{{item.address }}</view>
+          <view class='remark-li'>备注：{{item.remarks }}</view>
+        </view>
+        <view class='lsts-right'>
+           <text>已取消</text>
+        </view>
+      </view>
+      
+
+    </view>
+    </block>
+
+
+  </block>
+
+
+  
+
+   
+  </view>
+
+
+
+</view>

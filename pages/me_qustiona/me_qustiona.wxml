@@ -1,0 +1,92 @@
+<!--pages/questiona_detail/questiona_detail.wxml-->
+
+
+
+<block wx:for="{{ qwlist}}">
+  <!--提的问题  -->
+  <!-- <block wx:if="{{ item.question.createBy == item.userInfo.id}}">
+    <view class='qa-head'>
+
+      <view class='qa-title'> {{item.question.questionContent}}</view>
+      <view class='qa-head-b flex'>
+        <view class='qah-b-left flex'>
+          <image src='{{item.userInfo.avatarUrl}}' mode='aspectFit' />
+          <view>{{item.userInfo.nickName}}</view>
+          <text>{{item.question.createTime}}</text>
+        </view>
+        <view class='qah-b-right'>
+          <image src='../../static/images/icon_comment.png' mode='aspectFit' />
+          <text>{{item.awCount}}</text>
+        </view>
+      </view>
+
+    </view>
+
+  </block>
+  <!--回答的   -->
+  <!-- <block wx:else> -->  
+  <view class='qa-list'>
+    <view class='qa-title qa-title-2'> {{item.answers[0].answerContent}}</view>
+    <view class='qa-content'>提问：{{item.question.questionContent}}</view>
+
+    <view class='qa-head-b flex'>
+      <view class='qah-b-left flex'>
+        <image src='../../static/images/icon_head.png' mode='aspectFit' />
+        <view>{{item.userInfo.nickName}}</view>
+        <text>{{item.question.createTime}}</text>
+      </view>
+      <view class='qah-b-right qabr-delete'>
+        <image src='../../static/images/icon_delete.png' mode='aspectFit' />
+        <text bindtap='deleteAn' data-id="{{item.answers[0].id}}">删除</text>
+      </view>
+    </view>
+  </view>
+  </block>
+
+<!-- </block> -->
+
+<!-- 
+<view class='qa-ulist'>
+
+  <!-- <block wx:for="{{qwlist}}"> 
+  <view class='qa-list'>
+    <view class='qa-title qa-title-2'>{{item }}11</view>
+    <view class='qa-content'>提问：哥伦比亚35人名单：J罗法尔考领衔哥伦比亚J罗法尔考领衔哥伦比亚</view>
+
+    <view class='qa-head-b flex'>
+      <view class='qah-b-left flex'>
+        <image src='../../static/images/icon_head.png' mode='aspectFit' />
+        <view>放羊的小星</view>
+        <text>5分钟前</text>
+      </view>
+      <view class='qah-b-right qabr-delete'>
+        <image src='../../static/images/icon_delete.png' mode='aspectFit' />
+        <text bindtap='deleteHuiDa'>删除</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- </block>  
+
+
+
+
+  <view class='qa-list'>
+    <view class='qa-title qa-title-2'>哥伦比亚35人名单：J罗法尔考领衔罗法 尔考领衔？</view>
+    <view class='qa-content'>提问：哥伦比亚35人名单：J罗法尔考领衔哥伦比亚J罗法尔考领衔哥伦比亚</view>
+
+    <view class='qa-head-b flex'>
+      <view class='qah-b-left flex'>
+        <image src='../../static/images/icon_head.png' mode='aspectFit' />
+        <view>放羊的小星</view>
+        <text>5分钟前</text>
+      </view>
+      <view class='qah-b-right qabr-delete'>
+        <image src='../../static/images/icon_delete.png' mode='aspectFit' />
+        <text>删除</text>
+      </view>
+    </view>
+  </view>
+
+
+</view> -->

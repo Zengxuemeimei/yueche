@@ -1,0 +1,4 @@
+<!--pages/rule/rule.wxml-->
+<view class='ruleBj'>
+  <web-view src="https://miniapp2.imczjt.com/oil_rules.html"></web-view> 
+</view>

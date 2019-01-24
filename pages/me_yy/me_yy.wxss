@@ -1,0 +1,122 @@
+/* pages/shequ/shequ.wxss */
+
+.sq-nav view{
+  font-size: 30rpx;
+  color: #333;
+  height: 108rpx;
+  line-height: 108rpx;
+  
+  width: 50%;
+  text-align: center;
+  border-bottom: 4rpx solid #fff;
+}
+.sq-nav{
+   border-bottom: 1rpx solid #ddd;
+}
+.sq-nav view.on{
+  border-bottom: 4rpx solid #60c5ff;
+}
+
+.ul-box{
+  /* padding: 0 0 0 32rpx; */
+  padding: 0 30rpx;
+}
+
+.ul-box .li-shequ{
+  /* padding: 20rpx 30rpx 20rpx; */ 
+  padding: 20rpx 0;
+  border-bottom:  1rpx solid #ddd;
+}
+.li-sheq-m view{
+
+}
+.li-sheq-t{
+  font-size: 34rpx;
+  color:  #333;
+  margin-bottom: 10rpx;
+}
+.li-sheq-t view{
+  font-size: 34rpx;
+  color: #333;
+}
+.li-sheq-t text{
+  font-size: 24rpx;
+  color: #888;
+}
+.li-sheq-m view image{
+  width: 200rpx;
+  height: 130rpx;
+  border-radius: 8rpx;
+}
+.lsb-head{
+  display: inline-block;
+  margin-right: 50rpx;
+}
+.lsb-head image{
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}
+.prev-min{
+  vertical-align: middle;
+  font-size: 24rpx;
+  color: #999;
+}
+.lsb-head text{
+  vertical-align: middle;
+  font-size: 26rpx;
+  color: #333;
+
+}
+.comment-icon{
+  display: inline-block;
+  padding-left: 35rpx;
+  background: url(https://i.loli.net/2018/07/11/5b45ecf300ca1.png) no-repeat left center;
+  background-size: 26rpx 22rpx;
+  font-size: 24rpx;
+  color: #333;
+  vertical-align: middle;
+}
+.li-sheq-m{
+  justify-content: flex-start;
+  
+}
+.li-sheq-m view{
+  margin-right: 20rpx;
+}
+
+.li-sheq-m view:nth-last-child(0){
+  margin-right: 0;
+}
+
+.lsts-right .cancel-report{
+  border: 1rpx solid #f96464;
+  font-size:24rpx;
+  color: #f96464;
+  min-width: 130rpx;
+  height: 46rpx;
+  line-height: 40rpx;
+  background: #fff;
+}
+.lsts-address{
+  font-size: 26rpx;
+  color: #333;
+  line-height: 50rpx;
+}
+.remark-li{
+  color: #888;
+  font-size: 26rpx;
+}
+.lsts-con {
+  padding-bottom: 10rpx 0 10rpx;
+  max-width: 500rpx;
+}
+.li-shequ-ts{
+  padding: 0 0 25rpx 0 ;
+}
+.lsts-right text{
+  color: #cdcdcd;
+  font-size: 24rpx;
+}

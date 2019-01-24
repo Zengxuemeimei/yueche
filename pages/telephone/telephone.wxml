@@ -1,0 +1,113 @@
+<!-- <view class='phone-dd'>
+  <view class='phone-dd-t'>紧急</view>
+  <view class='phone-dd-b flex'>
+   <view class='flex'>
+    <view class='pdb-image'>
+      <image src='../../static/images/menu3.png' mode='scaleToFill'></image>
+    </view>
+    <view class='pdb-con'>
+      <view>急救</view>
+      <text>1829989898</text>
+    </view>
+   </view>
+    <view class='pdb-right'>
+      <image src='../../static/images/rr_rr.png' mode='widthFix'></image>
+    </view>
+  </view>
+</view> -->
+
+<!-- 紧急 -->
+<view class='phone-dd' >
+  <view class='phone-dd-t'>紧急</view>
+
+<block wx:for="{{datalist}}"> 
+ <view bindtap='makePhoneCall' data-phone='{{item.callNumber}}' class='phone-dd-b flex'  wx:if="{{item.callType == '1'}}">
+   <view class='flex'>
+    <view class='pdb-image'>
+      <image src='../../static/images/v2_phone3.png' mode='scaleToFill'></image>
+    </view>
+    <view class='pdb-con'>
+      <view>{{item.callName}}</view>
+      <text>{{item.callNumber}}</text>
+    </view>
+   </view>
+    <view class='pdb-right'>
+      <image src='../../static/images/rr_rr.png' mode='widthFix'></image>
+    </view>
+  </view>
+</block>
+</view>
+
+
+<!-- 4S服务电话
+ -->
+<view class='phone-dd' >
+  <view class='phone-dd-t'>4S服务电话</view>
+
+<block wx:for="{{datalist}}"> 
+ <view bindtap='makePhoneCall' data-phone='{{item.callNumber}}'  class='phone-dd-b flex'  wx:if="{{item.callType == '2'}}">
+   <view class='flex'>
+    <view class='pdb-image'>
+      <image src='../../static/images/v2_phone.png' mode='scaleToFill'></image>
+    </view>
+    <view class='pdb-con'>
+      <view>{{item.callName}}</view>
+      <text>{{item.callNumber}}</text>
+    </view>
+   </view>
+    <view class='pdb-right'>
+      <image src='../../static/images/rr_rr.png' mode='widthFix'></image>
+    </view>
+  </view>
+</block>
+</view>
+
+
+
+<!-- 道路救援 -->
+<view class='phone-dd' >
+  <view class='phone-dd-t'>道路救援</view>
+
+<block wx:for="{{datalist}}"> 
+ <view  bindtap='makePhoneCall' data-phone='{{item.callNumber}}' class='phone-dd-b flex'  wx:if="{{item.callType == '3'}}">
+   <view class='flex'>
+    <view class='pdb-image'>
+      <image src='../../static/images/v2_phone2.png' mode='scaleToFill'></image>
+    </view>
+    <view class='pdb-con'>
+      <view>{{item.callName}}</view>
+      <text>{{item.callNumber}}</text>
+    </view>
+   </view>
+    <view class='pdb-right'>
+      <image src='../../static/images/rr_rr.png' mode='widthFix'></image>
+    </view>
+  </view>
+</block>
+</view>
+
+
+
+<!-- 保险公司电话
+ -->
+<view class='phone-dd' >
+  <view class='phone-dd-t'>保险公司电话
+</view>
+
+<block wx:for="{{datalist}}"> 
+ <view  bindtap='makePhoneCall' data-phone='{{item.callNumber}}' class='phone-dd-b flex'  wx:if="{{item.callType == '4'}}">
+   <view class='flex'>
+    <view class='pdb-image'>
+      <image src='../../static/images/v2_phone3.png' mode='scaleToFill'></image>
+    </view>
+    <view class='pdb-con'>
+      <view>{{item.callName}}</view>
+      <text>{{item.callNumber}}</text>
+    </view>
+   </view>
+    <view class='pdb-right'>
+      <image src='../../static/images/rr_rr.png' mode='widthFix'></image>
+    </view>
+  </view>
+</block>
+</view>

@@ -1,0 +1,71 @@
+/* pages/oil_record/oil_record.wxss */
+.detail-box{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #f1f1f1;
+  background: #fff;  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.empty{
+  width: 100%;
+  height: 100rpx;
+}
+.detail-box text{
+  width: 50%;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 100rpx;
+  
+}
+.changeEffect{
+  color: #A2DCFF;
+  border-bottom: 4rpx solid #60C5FF;
+}
+.detail-day{
+  height: 120rpx;
+  padding: 0 40rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #f1f1f1;  
+  position: relative;
+}
+.saveOil-box{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 40rpx;
+  transform: translateY(-50%)
+}
+.time{
+  font-size: 24rpx;
+  color: #b3b1b1;
+  display: block;
+  margin-top: 10rpx;
+}
+.oil-mass{
+  text-align: center;
+  line-height: 120rpx;
+  margin-top: 0 !important;
+  color: #FE5F5F;
+  position: absolute;
+  top: 50%;
+  right: 40rpx;
+  transform: translateY(-50%)
+}
+.detail-day-text{
+  font-weight: bold;
+  display: block;
+  margin-top: 10rpx;
+  
+}
+.oil-num{
+  display: inline !important;
+  font-size: 36rpx;
+  font-weight: bold;
+}

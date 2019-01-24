@@ -1,0 +1,4 @@
+/* pages/helpcenter/helpcenter.wxss */
+.cell-ul .cell-li:nth-last-child(1){
+  border-bottom: 1rpx solid #ddd;
+}

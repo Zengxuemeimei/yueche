@@ -1,0 +1,27 @@
+ 
+ 
+ 
+
+<view class='login-ul'>
+  <view class='login-cell'>
+    
+    <input type='text' placeholder='请输入您的车型（如：宝马)'  value='{{chexin}}' bindinput="bindinput"  ></input>
+
+  </view>
+  <view class='login-cell'>
+   
+    <input  value='{{xinhao}}' class='' type='text'  bindinput="bindinputPwd"   placeholder='请输入您的车型号（如：X5)'></input>
+
+  </view>
+  <view class='login-cell'>
+    
+    <input  value='{{chepai}}' class='' type='text'  bindinput="bindinputChepai"   placeholder='请输入您的车牌号（如：川A·8888)'></input>
+
+  </view>
+ 
+</view>
+
+<view class='btn-without mt130 '>
+  <button class='default' type="default" size="default" bindtap="login">确认 </button>
+
+ </view>

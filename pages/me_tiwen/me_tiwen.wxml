@@ -1,0 +1,45 @@
+<!--pages/questiona_detail/questiona_detail.wxml-->
+
+<!-- <view class='qa-head'>
+  <view class='qa-title'>哥伦比亚35人名单：J罗法尔考领衔罗法 尔考领衔？</view>
+  <view class='qa-head-b flex'>
+    <view class='qah-b-left flex'>
+      <image src='../../static/images/icon_head.png' mode='aspectFit' />
+      <view>放羊的小星</view>
+      <text>2018-01-02</text>
+    </view>
+    <view class='qah-b-right'>
+      <image src='../../static/images/icon_comment.png' mode='aspectFit' />
+      <text>678</text>
+    </view>
+  </view>
+</view> -->
+ 
+<view class='qa-ulist' wx:for="{{questionlist}}">
+  <view class='qa-list qa-tiwen-list'>
+    <view class='qa-title qa-title-2'>{{item.question.questionContent}}</view>
+    <view class='qa-content-box'>
+      <!-- <image src='../../static/images/news_items.jpg' mode='aspectFit' /> -->
+      
+       <block wx:for="{{item.question.attach}}" wx:for-item="jitem">
+       <image src='{{jitem}}' mode='aspectFit' />
+</block>
+  
+    </view>
+
+    <view class='qa-head-b flex'>
+      <view class='qah-b-left flex'>
+        <image src='{{item.userInfo.avatarUrl}}' mode='aspectFit' />
+        <view>{{item.userInfo.nickName}}</view>
+        <text>{{item.question.createTime}}</text>
+      </view>
+      <view class='qah-b-right  '>
+        <image src='../../static/images/icon_comment.png' mode='aspectFit' />
+        <text>{{item.awCount}}</text>
+      </view>
+    </view>
+  </view>
+ 
+    
+
+</view>

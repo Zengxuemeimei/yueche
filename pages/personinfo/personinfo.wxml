@@ -1,0 +1,79 @@
+<!--pages/personinfo/personinfo.wxml-->
+ 
+<view class='setting-cell-ul shaddress-ul person-ul'>
+
+  <view class='cell-li flex'>
+    <view class='cell-li-l'>
+      <text>修改头像</text>
+    </view>
+    <view class='cell-li-r'>
+       <image class='head-img' src='../../static/images/icon_head.png' mode='aspectFit' />
+     <image src='../../static/images/rr_rr.png' mode='aspectFit' />
+    </view>
+  </view>
+  <view class='cell-li flex'>
+    <view class='cell-li-l'>
+      <text>昵称</text>
+    </view>
+    <view class='cell-li-r'>
+      <input type='number' value='放羊的小星' placeholder='昵称'></input>
+      <image src='../../static/images/rr_rr.png' mode='aspectFit' />
+    </view>
+  </view>
+
+   <view class='cell-li flex'>
+    <view class='cell-li-l'>
+      <text>车型</text>
+    </view>
+    <view class='cell-li-r'>
+      <input type='number' value='' placeholder='车型'></input>
+      <image src='../../static/images/rr_rr.png' mode='aspectFit' />
+    </view>
+  </view>
+
+  <view class='cell-li flex'>
+    <view class='cell-li-l'>
+      <text>性别</text>
+    </view>
+    <view class='cell-li-r'>
+      <input type='number' value='' placeholder='性别'></input>
+      <image src='../../static/images/rr_rr.png' mode='aspectFit' />
+    </view>
+  </view>
+
+  <view class='cell-li flex'>
+    <view class='cell-li-l'>
+      <text>生日</text>
+    </view>
+    <view class='cell-li-r'>
+      <input type='number' value='' placeholder='生日'></input>
+      <image src='../../static/images/rr_rr.png' mode='aspectFit' />
+    </view>
+  </view>
+
+  <view class='cell-li flex'>
+    <view class='cell-li-l'>
+      <text>所在地</text>
+    </view>
+    <view class='cell-li-r'>
+      <input type='number' value='' placeholder='所在地'></input>
+      <image src='../../static/images/rr_rr.png' mode='aspectFit' />
+    </view>
+  </view>
+
+  <view class='cell-li'>
+    <view class='cell-jianjie-li cell-li-l'>
+      <text >简介</text>
+    </view>
+    <view class='cell-jianjie'>
+       <textarea bindblur="bindTextAreaBlur" placeholder="请输入您的简介" />
+    </view>
+  </view>
+
+
+
+</view>
+
+<view class='btn-without mt130'>
+  <button class='default' type="default" size="default" bindtap="default"> 确定修改 </button>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/a_register/a_register.wxml-->
+<view class='login-ul'>
+  <view class='login-cell'>
+    <image  class='login-head-img' src='../../static/images/icon_phone.png' mode='aspectFit' />
+    <input type='number' bindinput='inputphone' placeholder='请输入您的手机号'></input>
+  </view>
+  <view class='login-cell'>
+    <image  class='login-head-img' src='../../static/images/icon_lock.png' mode='aspectFit' />
+    <input class=''  bindinput='inputpassword'  type='password' placeholder='请输入您的密码'></input>
+  </view>
+  <view class='login-cell flex'>
+    <view>
+    <image  class='login-head-img' src='../../static/images/icon_yzmcode.png' mode='aspectFit' />
+    <input  type='text'  bindinput='inputcode'  placeholder='请输入手机验证码'></input>
+    </view>
+    <text bindtap='sendCode'>{{sendtext}}</text>
+  </view>
+  <view class='login-cell-other  '>
+    <view class='lco-left'><view>注册即同意</view> <navigator url=''>《用户服务协议》</navigator></view>  
+  </view>
+</view>
+<view class='btn-without  '>
+  <button class='default' type="default" size="default" bindtap="submitData">确认注册 </button>
+ </view>

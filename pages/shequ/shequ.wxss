@@ -1,0 +1,88 @@
+/* pages/shequ/shequ.wxss */
+
+.sq-nav view{
+  font-size: 30rpx;
+  color: #333;
+  height: 108rpx;
+  line-height: 108rpx;
+  
+  width: 50%;
+  text-align: center;
+  border-bottom: 4rpx solid #fff;
+}
+.sq-nav{
+   border-bottom: 1rpx solid #ddd;
+}
+.sq-nav view.on{
+  border-bottom: 4rpx solid #60c5ff;
+}
+
+.ul-box{
+  padding: 0 0 0 32rpx;
+}
+
+.ul-box .li-shequ{
+  padding: 20rpx 30rpx 20rpx 0;
+  border-bottom:  1rpx solid #ddd;
+}
+.li-sheq-m view{
+
+}
+.li-sheq-t{
+  font-size: 34rpx;
+  color:  #333;
+  margin-bottom: 30rpx;
+}
+.li-sheq-m view image{
+  width: 200rpx;
+  height: 130rpx;
+  border-radius: 8rpx;
+}
+.lsb-head{
+  display: inline-block;
+  margin-right: 50rpx;
+}
+.lsb-head image{
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}
+.prev-min{
+  vertical-align: middle;
+  font-size: 24rpx;
+  color: #999;
+}
+.lsb-head .anda-text{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 26rpx;
+  color: #333;
+  max-width: 200rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  
+
+}
+.comment-icon{
+  display: inline-block;
+  padding-left: 35rpx;
+  background: url(https://i.loli.net/2018/07/11/5b45ecf300ca1.png) no-repeat left center;
+  background-size: 26rpx 22rpx;
+  font-size: 24rpx;
+  color: #333;
+  vertical-align: middle;
+}
+.li-sheq-m{
+  justify-content: flex-start;
+  
+}
+.li-sheq-m view{
+  margin-right: 20rpx;
+}
+
+.li-sheq-m view:nth-last-child(0){
+  margin-right: 0;
+}

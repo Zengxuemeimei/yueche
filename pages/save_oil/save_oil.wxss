@@ -1,0 +1,111 @@
+/* pages/save_oil/save_oil.wxss */
+page{
+  height: 100%;
+}
+.save_oil{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.oilBj{
+  width: 100%;
+  height: 100%;
+}
+.oil-barrel{
+  width: 364rpx;
+  height: 500rpx;
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.oil-barrel .oil-barrel-img{
+  width: 100%;
+  height: 100%;
+}
+.oil{
+  /* width:244rpx;
+  height:316rpx; */
+  width:317rpx;
+  height:316rpx;
+  position:absolute;
+  bottom:18rpx;
+  left:6%;
+}
+.oil image{
+  width: 317rpx;
+  position: absolute;
+  left: 0;
+  bottom: 17rpx;
+}
+.detail-box{
+  position: absolute;
+  top: 5%;
+  right: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  width: 294rpx;
+  text-align: center;
+}
+.detail{
+  width: 38rpx;
+  height: 54rpx;
+  display: block;
+  margin: 0 auto;
+}
+.detail-text{
+  color: #fff;
+  font-size: 24rpx;
+}
+.oil-gathering{
+  width: 168rpx;
+  height: 168rpx;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #333;
+  background: linear-gradient(45deg,#6F75FF,#9986FA);
+  position: absolute;
+  top:20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.oil-gathering-text{
+  color: #fff;
+  font-size: 30rpx;
+}
+.oil-mass-box{
+  font-size: 24rpx;
+  position: absolute;
+  top: 45%;
+  left: 31%;
+  text-align: center;
+}
+.oil-mass-box text{
+  display: block;
+  margin-bottom: 10rpx;
+}
+.oil-mass{
+  color: #fff;
+  font-size: 32rpx;
+}
+.exchange{
+  color: #fff;
+  width: 126rpx;
+  height: 50rpx;
+  background:linear-gradient(45deg,#6F75FF,#9986FA);
+  border-radius: 16rpx;
+  line-height: 50rpx;
+}
+.small_oil_box{
+  position: absolute;
+  bottom: 7%;
+  left: 10%;
+}
+.small_oil_img{
+  height:90rpx;
+  width:70rpx;
+
+}

@@ -1,0 +1,52 @@
+<!--pages/helpcenter_d/helpcenter_d.wxml-->
+
+<block wx:if='{{option == "1" }}'>
+
+  <view class='h-d-t'>
+    <view>怎么获得积分？</view>
+  </view>
+  <view class='hd-con'>
+    <view class='hd-con-p1'>“知道”里的积分就像游戏里的积分，您会付出积分，也会获得积分。积分可以在提问时用来悬赏，您也会随着积分增加而晋级并获得更高的头衔。</view>
+
+    <view class='hd-con-p2'>“知道”的具体积分得失规则如下：</view>
+    <view class='hd-con-p2'>积分增加:</view>
+    <view class='hd-con-p2'>操作 获得积分数 说明 </view>
+    <view class='hd-con-p2'>新用户首次登陆 ＋20 完成帐户的激活 </view>
+    <view class='hd-con-p2'>每日登陆 ＋5 每日只在第一次登陆加分</view>
+
+  </view>
+
+</block>
+<block  wx:elif='{{option == "2" }}'>
+
+  <view class='h-d-t'>
+    <view>怎么获得积分？</view>
+  </view>
+  <view class='hd-con'>
+    <view class='hd-con-p1'>“知道”里的积分就像游戏里的积分，您会付出积分，也会获得积分。积分可以在提问时用来悬赏，您也会随着积分增加而晋级并获得更高的头衔。</view>
+
+    <view class='hd-con-p2'>“知道”的具体积分得失规则如下：</view>
+    <view class='hd-con-p2'>积分增加:</view>
+    <view class='hd-con-p2'>操作 获得积分数 说明 </view>
+    <view class='hd-con-p2'>新用户首次登陆 ＋20 完成帐户的激活 </view>
+    <view class='hd-con-p2'>每日登陆 ＋5 每日只在第一次登陆加分</view>
+
+  </view>
+
+</block>
+<block wx:else>
+
+  <view class='h-d-t'>
+    <view>怎么获得积分？</view>
+  </view>
+  <view class='hd-con'>
+    <view class='hd-con-p1'>“知道”里的积分就像游戏里的积分，您会付出积分，也会获得积分。积分可以在提问时用来悬赏，您也会随着积分增加而晋级并获得更高的头衔。</view>
+
+    <view class='hd-con-p2'>“知道”的具体积分得失规则如下：</view>
+    <view class='hd-con-p2'>积分增加:</view>
+    <view class='hd-con-p2'>操作 获得积分数 说明 </view>
+    <view class='hd-con-p2'>新用户首次登陆 ＋20 完成帐户的激活 </view>
+    <view class='hd-con-p2'>每日登陆 ＋5 每日只在第一次登陆加分</view>
+  </view>
+
+</block>

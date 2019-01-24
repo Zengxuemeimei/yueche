@@ -1,0 +1,18 @@
+/* pages/online_yy/online_yy.wxss */ ::after
+.online-yy-ul .cell-li-r  input{
+  display: inline-block!important;
+  margin-right: 30rpx;
+  vertical-align: middle;
+}
+.shaddress-ul .cell-li-r input {
+ display: inline-block!important;
+  margin-right: 30rpx;
+  vertical-align: middle;
+}
+
+.online-yy-ul .cell-li-r image{
+  vertical-align: middle;
+}
+.cell-li-l{
+  width: 200rpx;
+}

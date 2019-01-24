@@ -1,0 +1,36 @@
+<!--pages/save_oil/save_oil.wxml-->
+<view class='save_oil'>
+  <image bindload="changeHeight" class='oilBj' src='../../static/images/oilBj.png'/>
+  <view class='oil-barrel'>
+    <image class='oil-barrel-img'  src='../../static/images/tank.png'/> 
+    <view  class='oil'>
+      <image mode='widthFix' src='{{oilImg}}'/>           
+    </view>
+    <view class='oil-mass-box'>
+      <text>已攒油</text>   
+      <text class='oil-mass'>{{oilMass}}ml</text>
+      <navigator class='exchange' url='../redemption_center/redemption_center'>兑换</navigator>
+    </view>
+   
+  </view>
+  <view class='detail-box'>
+    <navigator url='../oil_record/oil_record'>
+      <image class='detail' src='../../static/images/drip.png'/> 
+      <text class='detail-text'>明细记录</text> 
+    </navigator>
+    <navigator url='../rule/rule'>
+      <image class='detail' src='../../static/images/book.png' />  
+      <text class='detail-text'>活动规则</text>
+    </navigator>
+  </view>
+  <view style="opacity:{{gathering}}" bindtap='clickGathering' class='oil-gathering' >
+    <text  class='oil-gathering-text' >{{oilInfo}}</text>
+  </view>
+  <!-- 小油桶 -->
+  <view class='small_oil_box'>
+      <view wx:for="{{smallOil}}" wx:key="*this">
+          <image class='small_oil_img' data-index="{{index}}" src='../../static/images/small_oil.png'></image>
+      </view>
+    </view>
+</view>
+

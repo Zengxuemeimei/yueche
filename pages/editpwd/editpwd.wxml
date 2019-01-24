@@ -1,0 +1,27 @@
+ 
+ 
+ 
+
+<view class='login-ul'>
+  <view class='login-cell'>
+    <image  class='login-head-img' src='../../static/images/icon_phone.png' mode='aspectFit' />
+    <input type='number' placeholder='请输入您的手机号'  value='{{phone}}' bindinput="bindinput"  ></input>
+
+  </view>
+  <view class='login-cell'>
+    <image  class='login-head-img' src='../../static/images/icon_lock.png' mode='aspectFit' />
+    <input  value='{{password}}' class='' type='password'  bindinput="bindinputPwd"   placeholder='请设置您的旧密码'></input>
+
+  </view>
+  
+   <view class='login-cell'>
+    <image  class='login-head-img' src='../../static/images/icon_lock.png' mode='aspectFit' />
+    <input  value='{{passwordN}}' class='' type='password'  bindinput="bindinputPwdN"   placeholder='请设置您的新密码'></input>
+
+  </view>
+</view>
+
+<view class='btn-without mt130 '>
+  <button class='default' type="default" size="default" bindtap="login">确认修改 </button>
+
+ </view>

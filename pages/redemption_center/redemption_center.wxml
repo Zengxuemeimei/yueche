@@ -1,0 +1,65 @@
+<!--pages/redemption_center/redemption_center.wxml-->
+<view class='exchange-box'>
+    <view>
+      <text>可兑换油量</text>
+      <text>{{convertible}}ml</text>
+      <text bindtap='goExchange' class='accumulate look-up'>查看记录</text>
+    </view>
+    <view>
+      <text class='accumulate'>累计攒油量</text>
+      <text>{{oilMass}}ml</text>
+      <text class='accumulate'>已兑换油量</text>
+      <text>{{alreadyConvertibility}}ml</text>
+    </view>
+</view>
+<view class='exchange-list'>
+    <view class='oil-one oil-same'>
+      <text>机油</text>
+      <view class='one-thousand-box'>
+        <text class='one-thousand'>1000</text>
+        <text>ML</text>
+      </view>
+      <progress activeColor="#6268DB" backgroundColor="#ffffff57" percent="{{progressOne}}"/>
+      <text class='surplus'>还差{{oneThousand}}ML</text>
+      <view class='go-exchange'>
+        <text data-id="1000" bindtap='clickExchange'>兑换</text>
+      </view>
+    </view>
+     <view class='oil-two oil-same'>
+      <text>机油</text>
+      <view class='one-thousand-box'>
+        <text class='one-thousand'>2000</text>
+        <text>ML</text>
+      </view>
+      <progress activeColor="#6268DB" backgroundColor="#ffffff57" percent="{{progressTwo}}"/>
+      <text class='surplus'>还差{{twoThousand}}ML</text>
+      <view class='go-exchange'>
+        <text data-id="2000" bindtap='clickExchange'>兑换</text>
+      </view> 
+    </view>
+     <view class='oil-three oil-same'>
+        <text>机油</text>
+        <view class='one-thousand-box'>
+          <text class='one-thousand'>3000</text>
+          <text>ML</text>
+        </view>
+        <progress activeColor="#6268DB" backgroundColor="#ffffff57" percent="{{progressThree}}"/>
+        <text class='surplus'>还差{{threeThousand}}ML</text>
+        <view class='go-exchange'>
+          <text data-id="3000" bindtap='clickExchange'>兑换</text>
+        </view>
+    </view>
+     <view class='oil-four oil-same'>
+        <text>机油</text>
+        <view class='one-thousand-box'>
+          <text class='one-thousand'>4000</text>
+          <text>ML</text>
+        </view>
+        <progress activeColor="#6268DB" backgroundColor="#ffffff57" percent="{{progressFour}}"/>
+        <text class='surplus'>还差{{fourThousand}}ML</text>
+        <view class='go-exchange'>
+          <text data-id="4000" bindtap='clickExchange'>兑换</text>
+        </view>  
+    </view>
+</view>
+
